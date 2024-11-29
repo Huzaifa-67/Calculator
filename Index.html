@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Cal.css">
+    <link rel="shortcut icon"
+        href="https://cdn2.iconfinder.com/data/icons/ios7-inspired-mac-icon-set/512/Calculator_512.png"
+        type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="box">
+
+        <p style="font-size: 8vh;" id="heading">0</p>
+        <div class="buttons">
+            <div>
+                <button style="color: blue;" onclick="handleClick('AC')">AC</button>
+                <button style="color: darkgrey;" onclick="handleClick('*')">X</button>
+                <button style="color: darkgrey;" onclick="handleClick('%')">%</button>
+                <button style="color: darkgrey;" onclick="handleClick('/')">/</button>
+            </div>
+            <div>
+                <button onclick="handleClick(7)">7</button>
+                <button onclick="handleClick(8)">8</button>
+                <button onclick="handleClick(9)">9</button>
+                <button style="color: darkgrey;" onclick="handleClick('pi')">π</button>
+            </div>
+            <div>
+                <button onclick="handleClick(4)">4</button>
+                <button onclick="handleClick(5)">5</button>
+                <button onclick="handleClick(6)">6</button>
+                <button style="color: darkgrey;" onclick="handleClick('-')">-</button>
+            </div>
+            <div>
+                <button onclick="handleClick(1)">1</button>
+                <button onclick="handleClick(2)">2</button>
+                <button onclick="handleClick(3)">3</button>
+                <button style="color: darkgrey;" onclick="handleClick('+')">+</button>
+
+            </div>
+            <div>
+                <button onclick="handleClick(0)">0</button>
+                <button style="color: darkgrey;" onclick="handleClick('.')">.</button>
+                <button style="color: blue;" onclick="deleteChar('del')">Del</button>
+                <button style="background-color: darkgrey;" onclick="calculate()">=</button>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <script src="Cal.js"></script>
+</body>
+
+</html>
